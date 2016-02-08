@@ -33,3 +33,20 @@ To queue
 ```php
    \Eleads::toQueue($yourRequestInstance);
 ```
+
+## Fields
+
+> **NOTE** Only the token is required
+
+Field | Value | Description
+------|-------|------------
+token | String | identifies the client
+nome | String | Lead Name
+estado | String | State
+cidade | String | City
+email | String | Lead Email
+telefone | String | Lead phone
+descricao | String | Open text
+custom1 | String | Open Text
+custom2 | String | Open Text
+heat | Integer | Relevance
