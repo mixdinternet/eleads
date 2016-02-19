@@ -6,13 +6,12 @@ use GuzzleHttp\Client as HttpClient;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Bus\SelfHandling;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Contracts\Queue\ShouldBeQueued;
 
-class LeadHandler implements SelfHandling, ShouldQueue
+class LeadHandler implements SelfHandling, ShouldBeQueued
 {
 
-    use InteractsWithQueue, SerializesModels, Queueable;
+    use InteractsWithQueue, SerializesModels;
 
     protected $request;
     protected $cookie;
